@@ -1,0 +1,245 @@
+@font-face {
+  font-family: 'Wendy-One';
+  src: url('./assets/fonts/Wendy_One/WendyOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Zalando-Sans';
+  src: url('./assets/fonts/Zalando_Sans/ZalandoSans-VariableFont_wdth/,wght.ttf');
+}
+
+
+body {
+  background-image: linear-gradient(165deg,white 17%, #304795 65%, #0f256d 90%);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-size: cover;
+  /* font-family: 'Wendy-One'; */
+}
+
+.navbar {
+  visibility: visible;
+  display: contents;
+  position: absolute;
+  left: 0; 
+  top: 0;
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+
+.logInForm {
+  display: flex;
+  position: relative;
+}
+
+.form {
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, 25%);
+  flex-direction: column;
+  position: absolute;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 40px;
+  padding-top: 20px;
+  min-width: 20.99rem;
+  max-width: 25.99rem;
+  border-radius: 20px;
+  font-family: 'Zalando-Sans', sans-serif;
+}
+
+.first-para {
+  font-size: 20px;
+  max-width: 25.75rem;
+  color: #172554;
+  margin-bottom: 1rem;
+  
+}
+
+.first-para > h3 {
+  font-family: 'Wendy-one', sans-serif;
+  font-size: 48px;
+  margin-top: 20px;
+  margin-bottom: 0.5rem;
+  color: #172554;
+}
+
+.first-para > p2 {
+  font-size: 27px;
+  font-family: 'Zalando-Sans', sans-serif;
+}
+
+.form button {
+  align-self: flex-end;
+}
+
+.flex-column{
+  margin-top: 14px;
+}
+
+.flex-column > label {
+  color: #151717;
+  font-weight: 600;
+
+}
+
+.inputForm {
+  border: 1px solid #4F5769;
+  border-radius: 6px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  transition: 0.2s ease-in-out;
+  max-width: 25.75rem;
+}
+
+.input {
+  border:none;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  max-width: 25.99rem;
+  justify-content: space-between;
+}
+
+.flex-row > div > label {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+}
+
+.span {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #2366d1;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: 'Zalando-Sans', sans-serif;
+}
+
+.button-submit {
+  margin: 6% 0 0 0;
+  background-color: #12598f;
+  border: none;
+  color: white;
+  font-size: 25px;
+  border-radius: 42px;
+  height: 60px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  font-family: 'Wendy-one', sans-serif;
+}
+
+.button-submit:hover {
+  background-color: #397cb0;
+}
+
+.p {
+  text-align: rtl;
+  color: black;
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin: 1px 0;
+  max-width: 25.99rem;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+  border: 1px solid #ededef;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  border: 1px solid hsl(217, 89%, 56%);
+}
+
+
+.logo-mobile {
+  max-width: 276px;
+  margin: 0 auto; 
+  display: block;
+  position: relative;
+  align-items: center;
+}
+
+
+
+@media only screen and (max-width: 601px) {
+  .navbar {
+  visibility: hidden;
+   /* display: none; */
+    
+  }
+  .logo-mobile {
+  visibility: visible;
+  display: contents;
+  }
+  .form {
+  max-width: 12rem;
+  min-width: 15rem;
+  transform: translate(25%, 5%);
+  gap:4px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .logo-mobile {
+    display: none;
+    visibility: hidden;
+    max-width: 0;
+    max-height: 0;
+    }
+  .navbar {
+    visibility: visible;
+   /* display: none; */
+  }
+}
+
+@media only screen and (max-width: 491px) {
+  .navbar {
+  visibility: hidden;
+   /* display: none; */
+    
+  }
+  .logo-mobile {
+  visibility: visible;
+  display: contents;
+  }
+  .form {
+  max-width: 10rem;
+  min-width: 15rem;
+  max-height: 85rem;
+  transform: translate(8%, 1%);
+  padding: 1.6rem;
+  gap:4px;
+  }
+}
