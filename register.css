@@ -14,7 +14,6 @@ body {
   background-attachment: fixed;
   background-size: 100% 100%;
   background-size: cover;
-  /* font-family: 'Wendy-One'; */
 }
 
 .navbar {
@@ -28,7 +27,7 @@ body {
 }
 
 
-.logInForm {
+.registerForm {
   display: flex;
   position: relative;
 }
@@ -36,15 +35,15 @@ body {
 .form {
   left: 50%;
   display: flex;
-  transform: translate(-50%, 25%);
+  transform: translate(-50%, 2%);
   flex-direction: column;
   position: absolute;
   gap: 10px;
   background-color: #ffffff;
   padding: 40px;
   padding-top: 20px;
-  min-width: 20.99rem;
-  max-width: 25.99rem;
+  min-width: 25.99rem;
+  max-width: 30.99rem;
   border-radius: 20px;
   font-family: 'Zalando-Sans', sans-serif;
 }
@@ -65,7 +64,7 @@ body {
 }
 
 .first-para > p2 {
-  font-size: 27px;
+  font-size: 1.6rem;
   font-family: 'Zalando-Sans', sans-serif;
 }
 
@@ -122,16 +121,6 @@ body {
   font-weight: 400;
 }
 
-.span {
-  font-size: 14px;
-  margin-left: 5px;
-  color: #2366d1;
-  font-weight: 500;
-  cursor: pointer;
-  text-decoration: underline;
-  font-family: 'Zalando-Sans', sans-serif;
-}
-
 .button-submit {
   margin: 6% 0 0 0;
   background-color: #397cb0;
@@ -156,6 +145,7 @@ body {
 }
 
 
+
 .logo-mobile {
   max-width: 276px;
   margin: 0 auto; 
@@ -177,9 +167,9 @@ body {
   display: contents;
   }
   .form {
-  max-width: 12rem;
+  max-width: 20rem;
   min-width: 15rem;
-  transform: translate(25%, 5%);
+  transform: translate(-50%, 2%);
   gap:4px;
   }
 }
@@ -195,23 +185,27 @@ body {
     visibility: visible;
    /* display: none; */
   }
+  .form {
+    top: 2%;
+    max-width: 50rem;
+  }
 }
 
 @media only screen and (max-width: 491px) {
   .navbar {
   visibility: hidden;
    /* display: none; */
-    
   }
   .logo-mobile {
   visibility: visible;
   display: contents;
   }
   .form {
+  display: flex ;
   max-width: 10rem;
   min-width: 15rem;
   max-height: 85rem;
-  transform: translate(8%, 1%);
+  /* transform: translate(50%, 2%); */
   padding: 1.6rem;
   gap:4px;
   }
